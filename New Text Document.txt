@@ -1,0 +1,855 @@
+[
+  {
+    "intent": "college_info",
+    "patterns": [
+      "college info",
+      "about college",
+      "gp chapra",
+      "what is gp chapra",
+      "tell me about college"
+    ],
+    "response": "Government Polytechnic Chapra is a government technical institute located in Marhaura, Saran, Bihar. It is affiliated with SBTE Bihar and approved by AICTE."
+  },
+  {
+    "intent": "admission",
+    "patterns": [
+      "admission process",
+      "how to take admission",
+      "apply for admission",
+      "entrance exam",
+      "dcece admission"
+    ],
+    "response": "Admission is done through DCECE entrance exam conducted by BCECE Board. After qualifying, students go through counselling and document verification."
+  },
+  {
+    "intent": "courses",
+    "patterns": [
+      "courses offered",
+      "branches",
+      "what are courses",
+      "engineering branches",
+      "diploma courses"
+    ],
+    "response": "The college offers diploma courses in Computer Science, Civil Engineering, Electrical Engineering, Electronics Engineering, Mechanical Engineering and Automobile Engineering."
+  },
+  {
+    "intent": "syllabus",
+    "patterns": [
+      "syllabus",
+      "what is syllabus",
+      "subjects",
+      "what we study",
+      "course structure"
+    ],
+    "response": "Each branch has a semester-wise syllabus including theory subjects, practical labs, assignments, and projects designed by SBTE Bihar."
+  },
+  {
+    "intent": "labs",
+    "patterns": [
+      "labs",
+      "laboratory",
+      "how many labs",
+      "practical lab",
+      "lab details"
+    ],
+    "response": "Each department has dedicated labs such as Computer Lab, Electrical Lab, Mechanical Workshop, Civil Lab, and Electronics Lab depending on the branch."
+  },
+  {
+    "intent": "faculty",
+    "patterns": [
+      "faculty",
+      "teachers",
+      "hod",
+      "staff",
+      "professor details"
+    ],
+    "response": "The college has experienced faculty members and HODs in each department who guide students in both theory and practical learning."
+  },
+  {
+    "intent": "hostel",
+    "patterns": [
+      "hostel",
+      "boys hostel",
+      "girls hostel",
+      "accommodation",
+      "stay facility"
+    ],
+    "response": "Hostel facilities are available for both boys and girls depending on availability. Rooms are allotted based on merit and distance."
+  },
+  {
+    "intent": "mess_food",
+    "patterns": [
+      "mess food",
+      "food menu",
+      "hostel food",
+      "what food is provided"
+    ],
+    "response": "The hostel mess provides simple vegetarian and non-vegetarian meals including breakfast, lunch, and dinner with a fixed monthly menu."
+  },
+  {
+    "intent": "exam",
+    "patterns": [
+      "exam pattern",
+      "internal exam",
+      "external exam",
+      "semester exam",
+      "viva practical"
+    ],
+    "response": "Exams are conducted semester-wise by SBTE Bihar including internal assessment, practical exams, viva, and end-semester written exams."
+  },
+  {
+    "intent": "result",
+    "patterns": [
+      "result",
+      "how to check result",
+      "marksheet",
+      "cgpa sgpa",
+      "exam result download"
+    ],
+    "response": "Results are published on the official SBTE Bihar website. Students can check their SGPA and CGPA using their roll number."
+  },
+  {
+    "intent": "placement",
+    "patterns": [
+      "placement",
+      "job opportunities",
+      "campus placement",
+      "recruitment"
+    ],
+    "response": "The college provides placement assistance through training and placement cell, helping students get opportunities in companies and industries."
+  },
+  {
+    "intent": "sports",
+    "patterns": [
+      "sports",
+      "umang",
+      "games",
+      "activities",
+      "sports events"
+    ],
+    "response": "The college organizes sports events under UMANG where students participate in cricket, football, badminton, and athletics."
+  },
+  {
+    "intent": "library",
+    "patterns": [
+      "library",
+      "books",
+      "study room",
+      "reading hall"
+    ],
+    "response": "The college has a well-equipped library with academic books, reference materials, and journals for all branches."
+  },
+  {
+    "intent": "environment",
+    "patterns": [
+      "environment",
+      "college environment",
+      "campus life",
+      "how is campus"
+    ],
+    "response": "The campus environment is disciplined, peaceful, and focused on technical learning with proper facilities and greenery."
+  },
+  {
+    "intent": "location",
+    "patterns": [
+      "location",
+      "where is college",
+      "how to reach",
+      "chapra route",
+      "station nearby"
+    ],
+    "response": "The college is located in Marhaura, Saran district, Bihar. The nearest railway station is Chapra Junction."
+  },
+  {
+    "intent": "scholarship",
+    "patterns": [
+      "scholarship",
+      "financial aid",
+      "fee help",
+      "govt scholarship"
+    ],
+    "response": "Scholarships are available for SC/ST/OBC/Minority students through Bihar government schemes and merit-based programs."
+  },
+    {
+  "intent": "fee_structure",
+  "patterns": [
+    "fee structure",
+    "college fees",
+    "total fee of diploma",
+    "how much is admission fee",
+    "semester fees",
+    "exam form fee",
+    "hostel fee",
+    "year wise fee",
+    "total cost of course",
+    "boys and girls fee difference",
+    "SC ST fee benefits",
+    "enrollment fee",
+    "how much does complete diploma cost",
+    "gp chapra fee details"
+  ],
+  "response": "The fee structure of the college includes multiple components. Admission fee is approximately ₹1665. For each semester exam form fee is charged yearly. Enrollment fee is generally not charged separately. Hostel fee is around ₹4500 per semester. Exam form fees vary: for general category boys it is around ₹1500, for girls and SC/ST students it is around ₹1000. Overall, the total cost of the complete diploma course including hostel (excluding mess food) is approximately ₹10,000 to ₹12,000."
+} ,
+{
+  "intent": "student_complaint",
+  "patterns": [
+    "complaint",
+    "how to file complaint",
+    "student complaint system",
+    "where to complain",
+    "grievance",
+    "problem in college",
+    "issue in hostel",
+    "report issue",
+    "complaint portal",
+    "whom to contact for complaint",
+    "college complaint process",
+    "ragging complaint",
+    "mess complaint",
+    "lab problem complaint"
+  ],
+  "response": "Students can report complaints related to academics, hostel, mess, labs, or any other issue through the college grievance system or directly to the concerned HOD or college authority. Serious issues like ragging should be reported immediately to the anti-ragging cell or college administration. Complaints are taken seriously and resolved as soon as possible."
+},
+ {
+  "intent": "principal",
+  "patterns": [
+    "principal name",
+    "who is principal",
+    "head of college",
+    "college principal",
+    "current principal"
+  ],
+  "response": "The college is headed by a Principal who manages academic and administrative activities. For the latest principal details, students should check the official notice board or website."
+},
+{
+  "intent": "anti_ragging",
+  "patterns": [
+    "anti ragging cell",
+    "ragging helpline",
+    "complaint ragging",
+    "ragging rules",
+    "is ragging banned"
+  ],
+  "response": "The college has an Anti-Ragging Cell. Ragging is strictly banned and punishable. Students can report anonymously and strict action is taken."
+},
+{
+  "intent": "exam_form",
+  "patterns": [
+    "exam form",
+    "how to fill exam form",
+    "sbte exam form",
+    "form fill process",
+    "semester form"
+  ],
+  "response": "Students need to fill exam forms online through SBTE Bihar portal before semester exams and submit required fees within the deadline."
+},
+{
+  "intent": "grading_system",
+  "patterns": [
+    "grading system",
+    "cgpa system",
+    "how marks are calculated",
+    "sgpa cgpa",
+    "grading pattern"
+  ],
+  "response": "The college follows SGPA and CGPA system. Marks include internal assessment, practical exams, and semester theory exams conducted by SBTE Bihar."
+},
+{
+  "intent": "practical_exam",
+  "patterns": [
+    "practical exam",
+    "lab exam",
+    "viva exam",
+    "how practical conducted",
+    "internal viva"
+  ],
+  "response": "Practical exams include lab work and viva. Students must perform experiments and answer questions to pass practical subjects."
+},
+{
+  "intent": "project_work",
+  "patterns": [
+    "final year project",
+    "project work",
+    "major project",
+    "mini project",
+    "project submission"
+  ],
+  "response": "Students have to complete project work in final year which includes designing, implementation, and viva presentation based on their branch."
+},
+{
+  "intent": "discipline",
+  "patterns": [
+    "rules",
+    "discipline",
+    "college rules",
+    "code of conduct",
+    "student rules"
+  ],
+  "response": "Students must follow strict discipline including attendance, uniform, respectful behavior, and academic honesty. Violations may lead to action."
+},
+{
+  "intent": "extra_curricular",
+  "patterns": [
+    "extra activities",
+    "clubs",
+    "events",
+    "cultural activities",
+    "fest"
+  ],
+  "response": "The college organizes cultural events, technical activities, sports competitions, and student participation programs for overall development."
+},
+{
+  "intent": "lab_timing",
+  "patterns": [
+    "lab timing",
+    "practical timing",
+    "lab hours",
+    "when labs happen"
+  ],
+  "response": "Lab classes are scheduled along with theory classes and may extend for 2 to 3 hours depending on subject requirements."
+},
+{
+  "intent": "attendance_issue",
+  "patterns": [
+    "low attendance",
+    "what if attendance low",
+    "attendance shortage",
+    "can i give exam without attendance"
+  ],
+  "response": "If attendance is below 75 percent, students may not be allowed to appear in exams unless special permission is granted."
+},
+{
+  "intent": "college_strength",
+  "patterns": [
+    "number of students",
+    "college strength",
+    "total students",
+    "how many students study"
+  ],
+  "response": "The college has a large number of students across different branches and semesters, creating a diverse academic environment."
+},
+{
+  "intent": "notice",
+  "patterns": [
+    "notice",
+    "college notice",
+    "important updates",
+    "where to see notice",
+    "announcements"
+  ],
+  "response": "Students can check important notices on the college notice board or official website for updates regarding exams, holidays, and events."
+},
+{
+  "intent": "security",
+  "patterns": [
+    "security",
+    "is campus safe",
+    "safety in hostel",
+    "college safety"
+  ],
+  "response": "The campus is generally safe with proper monitoring. Hostel and campus rules are strictly followed to ensure student safety. Cameras are installed everywhere."
+},
+{
+  "intent": "syllabus_branch",
+  "patterns": [
+    "branch wise syllabus",
+    "cs syllabus",
+    "civil syllabus",
+    "electrical syllabus",
+    "semester subjects",
+    "what subjects in diploma"
+  ],
+  "response": "Each branch has its own semester-wise syllabus designed by SBTE Bihar. It includes theory subjects, practical labs, and projects. Students can download the detailed syllabus from the official SBTE Bihar website."
+},
+{
+  "intent": "enrollment",
+  "patterns": [
+    "enrollment",
+    "how to enroll",
+    "enrollment process",
+    "student enrollment"
+  ],
+  "response": "Enrollment is done after admission through SBTE Bihar. Students receive a unique enrollment number which is used for exams and results."
+},
+{
+  "intent": "admission_documents",
+  "patterns": [
+    "documents for admission",
+    "what documents needed",
+    "admission documents list",
+    "certificate required"
+  ],
+  "response": "Required documents include 10th marksheet, admit card, DCECE rank card, caste certificate (if applicable), income certificate, passport size photos, Aadhaar card, and residence certificate."
+},
+{
+  "intent": "faculty_details",
+  "patterns": [
+    "faculty details",
+    "teachers info",
+    "faculty qualification",
+    "about teachers"
+  ],
+  "response": "Each department has qualified faculty members including lecturers and HODs who guide students in both theory and practical learning."
+},
+{
+  "intent": "assignment_practical",
+  "patterns": [
+    "assignment",
+    "practical work",
+    "lab assignment",
+    "record file",
+    "homework"
+  ],
+  "response": "Students are required to complete assignments, lab records, and practical files regularly. These are part of internal assessment marks."
+},
+{
+  "intent": "laboratory_details",
+  "patterns": [
+    "lab details",
+    "how many labs",
+    "types of labs",
+    "lab facilities"
+  ],
+  "response": "The college has multiple labs including Computer Lab, Electrical Lab, Electronics Lab, Mechanical Workshop, Civil Lab, and Automobile Lab depending on branches."
+},
+{
+  "intent": "classroom",
+  "patterns": [
+    "classroom",
+    "class condition",
+    "smart class",
+    "study environment"
+  ],
+  "response": "Classrooms are spacious and suitable for learning. Some rooms may have smart teaching facilities like projectors."
+},
+{
+  "intent": "campus_features",
+  "patterns": [
+    "campus features",
+    "facilities in campus",
+    "college features",
+    "what facilities available"
+  ],
+  "response": "The campus includes classrooms, labs, library, playground, hostel, canteen, and academic environment for technical learning."
+},
+{
+  "intent": "hod_details",
+  "patterns": [
+    "hod name",
+    "head of department",
+    "hod of cs",
+    "hod of civil"
+  ],
+  "response": "Each department has a Head of Department (HOD). The HODs are: Dr. Rama Singh (Computer Science), Dr. Sunny Kumar (Civil), Prof. Mukesh Kumar (Mechanical), Prof. Manish Kumar (Electrical), Prof. Shushant Kumar (Automobile), and Prof. Om Prakash Aditya (Electronics). For updated names, students should check the official notice board or college website."
+},
+{
+  "intent": "seminar_workshop",
+  "patterns": [
+    "seminar",
+    "webinar",
+    "workshop",
+    "technical events",
+    "training session"
+  ],
+  "response": "The college organizes seminars, webinars, and workshops to improve technical knowledge and industry exposure of students."
+},
+{
+  "intent": "official_contact",
+  "patterns": [
+    "official website",
+    "college website",
+    "official email",
+    "contact details"
+  ],
+  "response":" Students can check official information on the college website Visit Official Website⁠  and contact through the official email provided by the institution (email: gpchapra@gmail.com)."
+} ,
+{
+  "intent": "principal_details",
+  "patterns": [
+    "principal",
+    "principal name",
+    "head of college"
+  ],
+  "response": "The Principal, Dr. Anil Kumar Singh, is the head of the institution responsible for managing academics and administration. For the latest details, refer to official sources."
+},
+{
+  "intent": "extra_courses",
+  "patterns": [
+    "kyp course",
+    "cisco course",
+    "extra courses",
+    "skill development"
+  ],
+  "response": "Students can also participate in additional courses like KYP (Kushal Yuva Program), Cisco networking, and other skill development programs."
+},
+{
+  "intent": "medical",
+  "patterns": [
+    "medical facility",
+    "first aid",
+    "health service"
+  ],
+  "response": "Basic medical and first aid facilities are available in the college for students in case of emergency."
+},
+{
+  "intent": "complaint_system",
+  "patterns": [
+    "complaint system",
+    "grievance",
+    "report issue",
+    "complaint process"
+  ],
+  "response": "Students can report complaints to HOD, faculty, or grievance cell. Serious issues are handled by administration."
+},
+{
+  "intent": "travel_route",
+  "patterns": [
+    "route from chapra",
+    "how to reach",
+    "nearest station",
+    "travel details"
+  ],
+  "response": "The college is located in Marhaura. Students can travel from Chapra via auto or bus. The nearest railway station is Chapra Junction."
+},
+{
+  "intent": "internal_exam",
+  "patterns": [
+    "internal exam",
+    "sessional exam",
+    "mid exam"
+  ],
+  "response": "Internal exams are conducted by the college and marks are included in final result."
+},
+{
+  "intent": "viva_practical",
+  "patterns": [
+    "viva",
+    "practical exam",
+    "lab exam"
+  ],
+  "response": "Practical exams include lab performance and viva questions conducted before / after final exams."
+},
+{
+  "intent": "result_download",
+  "patterns": [
+    "download result",
+    "result kaha milega",
+    "check result"
+  ],
+  "response": "Students can download results from the official SBTE Bihar website using roll number."
+},
+{
+  "intent": "exam_pattern",
+  "patterns": [
+    "exam pattern",
+    "how exam works",
+    "marks distribution"
+  ],
+  "response": "The exam includes internal marks, practical marks, and final semester written exam conducted by SBTE Bihar."
+},
+{
+  "intent": "year_back",
+  "patterns": [
+    "year back",
+    "fail year",
+    "backlog rule"
+  ],
+  "response": "If a student fails in any subjects more than five times, they may get backlog and need to clear it in next exams. Multiple failures may lead to year back."
+},
+{
+  "intent": "supplementary",
+  "patterns": [
+    "supplementary exam",
+    "back exam",
+    "re exam"
+  ],
+  "response": "Students who fail can appear in supplementary exams conducted by SBTE Bihar to clear their subjects."
+},
+{
+  "intent": "carry_rule",
+  "patterns": [
+    "carry rule",
+    "backlog carry",
+    "promotion rules",
+    "can i go next year with back"
+  ],
+  "response": "Students may be promoted with limited backlogs (6), but too many backlogs can stop promotion. Rules are decided by SBTE Bihar."
+},
+{
+  "intent": "third_year_admission",
+  "patterns": [
+    "3rd year admission",
+    "can i take admission in 3rd year",
+    "direct third year entry"
+  ],
+  "response": "Direct admission in 3rd year is not allowed. Only lateral entry in 2nd year is possible."
+},
+{
+  "intent": "nearest_station",
+  "patterns": [
+    "nearest railway station",
+    "station near college",
+    "closest station to gp chapra",
+    "which station is near college",
+    "railway station near gp chapra"
+  ],
+  "response": "The nearest railway station to Government Polytechnic Chapra is Marhaura Railway Station, which is located a few kilometers from the college. Another major nearby station is Chapra Junction, which is around 20–25 km away and well connected to major cities. From these stations, students can easily reach the college by auto or local transport."
+},
+
+{
+  "intent": "college_review",
+  "patterns": [
+    "college kaisa hai",
+    "how is the college",
+    "is college good",
+    "gp chapra review",
+    "college environment kaisa hai",
+    "should i take admission here",
+    "is this a good college",
+    "college rating"
+  ],
+  "response": "Government Polytechnic Chapra is a well-maintained and disciplined college with a peaceful environment. It provides good technical education, basic facilities like labs, library, and hostel, and supports students in learning and skill development."
+}
+,
+{
+  "intent": "nearest_station",
+  "patterns": [
+    "nearest railway station",
+    "station near college",
+    "closest station to gp chapra",
+    "which station is near college",
+    "railway station near gp chapra"
+  ],
+  "response": "The nearest railway station to Government Polytechnic Chapra is Marhaura Railway Station, which is located a few kilometers from the college. Another major nearby station is Chapra Junction, which is around 20–25 km away and well connected to major cities. From these stations, students can easily reach the college by auto or local transport."
+}
+,
+{
+  "intent": "college_review",
+  "patterns": [
+    "college kaisa hai",
+    "how is the college",
+    "is college good",
+    "gp chapra review",
+    "college environment kaisa hai",
+    "should i take admission here",
+    "is this a good college",
+    "college rating"
+  ],
+  "response": "Government Polytechnic Chapra is a well-maintained and disciplined college with a peaceful environment. It provides good technical education, basic facilities like labs, library, and hostel, and supports students in learning and skill development."
+},
+  {
+    "intent": "greeting",
+    "patterns": [
+      "hi",
+      "hello",
+      "hey",
+      "hii",
+      "good morning",
+      "good evening"
+    ],
+    "response": "Hello! 😊 How can I help you regarding Government Polytechnic Chapra?"
+  },
+  {
+    "intent": "goodbye",
+    "patterns": [
+      "bye",
+      "goodbye",
+      "see you",
+      "exit",
+      "ok bye"
+    ],
+    "response": "Goodbye! 👋 Have a great day."
+  },
+  {
+    "intent": "thanks",
+    "patterns": [
+      "thank you",
+      "thanks",
+      "thnx",
+      "ok thanks"
+    ],
+    "response": "You're welcome! 😊 If you have more questions, feel free to ask."
+  },
+  {
+    "intent": "yes_no",
+    "patterns": [
+      "ok",
+      "hmm",
+      "yes",
+      "no",
+      "acha",
+      "theek hai"
+    ],
+    "response": "Alright 👍 Let me know if you want to ask something else."
+  },
+  {
+    "intent": "student_life",
+    "patterns": [
+      "student life",
+      "daily routine",
+      "college life kaisa hai",
+      "life in gp chapra"
+    ],
+    "response": "Student life includes attending classes, practical labs, completing assignments, participating in events, and preparing for exams in a disciplined environment."
+  },
+  {
+    "intent": "strictness",
+    "patterns": [
+      "is college strict",
+      "rules strict hai kya",
+      "discipline kaisa hai"
+    ],
+    "response": "The college maintains discipline regarding attendance, uniform, and behavior to ensure a proper learning environment."
+  },
+  {
+    "intent": "after_diploma",
+    "patterns": [
+      "after diploma what next",
+      "future after diploma",
+      "btech kar sakte hai",
+      "job after diploma"
+    ],
+    "response": "After diploma, students can go for B.Tech through lateral entry or apply for jobs depending on their skills."
+  },
+  {
+    "intent": "suggestion",
+    "patterns": [
+      "what should i ask",
+      "help me",
+      "guide me",
+      "what can you do"
+    ],
+    "response": "You can ask about admission, fees, courses, hostel, placement, exams, or campus details of Government Polytechnic Chapra."
+  },
+  {
+  "intent": "uniform_idcard",
+  "patterns": [
+    "uniform",
+    "dress code",
+    "college uniform",
+    "id card",
+    "identity card",
+    "college id",
+    "uniform and id card",
+    "rules for dress and id"
+  ],
+  "response": "Our college follows a strict uniform policy. Girls wear a white suit with black salwar and dupatta, while boys wear a white shirt, black pants, a tie, and formal shoes. Only formal dress is allowed on campus. Students are also provided with a college ID card after admission. It is mandatory to carry the ID card every day inside the campus, and it should not be lost or misplaced."
+},
+{
+  "intent": "hostel_facility",
+  "patterns": [
+    "hostel",
+    "hostel facility",
+    "rooms in hostel",
+    "college hostel details",
+    "stay in hostel",
+    "accommodation",
+    "hostel gym"
+  ],
+  "response": "Our college provides separate hostel facilities for boys and girls. Each room is equipped with basic amenities like an almirah, study table, bed, and charging points. A minimum of two students can stay in one room. Gym facilities are available in the boys' hostel, while currently they are not available in the girls' hostel."
+},
+{
+  "intent": "marks_pattern",
+  "patterns": [
+    "marks pattern",
+    "exam pattern",
+    "how marks are calculated",
+    "grading system",
+    "internal and external marks",
+    "evaluation system",
+    "college marks distribution"
+  ],
+  "response": "The final result in our college is based on a combination of assignments, lab work, attendance, class participation, internal tests, viva, and external examinations. The external exam is usually of 70 marks, while the remaining 20–30 marks are internal assessment given by subject teachers. The external exam includes 10 objective questions (2 marks each), 5 short-answer questions (4 marks each), and 5 long-answer questions (5 or 6 marks each)."
+},
+{
+  "intent": "study_facility",
+  "patterns": [
+    "study facility",
+    "library",
+    "books availability",
+    "library card",
+    "where to study",
+    "computer lab for study",
+    "matlab lab",
+    "study resources"
+  ],
+  "response": "Our college provides excellent study facilities. We have a well-equipped library with a variety of books. Students are given a library card, which allows them to borrow books and study in the library. We also have computer and MATLAB labs where students can study using computers, watch educational videos, and access digital resources. Overall, both books and computer-based learning facilities are available for students."
+},
+{
+  "intent": "college_environment",
+  "patterns": [
+    "college environment",
+    "nearby shops",
+    "facilities near college",
+    "shops near college",
+    "cyber cafe",
+    "canteen or cafe",
+    "things around college"
+  ],
+  "response": "The environment around our college is very convenient and student-friendly. There are many shops near the campus, including cyber cafes where students can easily complete tasks like form filling and other academic work. Tea stalls and other small shops are also available, so students can find all necessary supplementary items easily. Additionally, there is a Sudha Cafe inside the college campus for refreshments."
+},
+{
+  "intent": "diploma_qualification",
+  "patterns": [
+    "diploma",
+    "diploma qualification",
+    "diploma level",
+    "is diploma equal to 12th",
+    "after diploma what next",
+    "higher studies after diploma",
+    "diploma course details"
+  ],
+  "response": "A diploma course is generally considered equivalent to the intermediate (10+2) level in terms of academic stage. It is an undergraduate-level program that focuses more on practical and technical skills. After completing a diploma, students can either apply for jobs or continue their education through higher studies such as B.Tech or B.E. via lateral entry."
+},
+{
+  "intent": "diploma_benefits",
+  "patterns": [
+    "benefits of diploma",
+    "polytechnic advantages",
+    "why choose diploma",
+    "advantages of polytechnic",
+    "diploma benefits",
+    "why diploma course",
+    "scope of diploma"
+  ],
+  "response": "Diploma or polytechnic courses offer many benefits. They focus on practical and technical skills, making students job-ready in a shorter time. The course duration is usually less than a degree, so students can start earning earlier. It is also more affordable compared to degree programs. After completing a diploma, students can either get a job or continue higher studies like B.Tech through lateral entry. These courses are especially useful for building strong technical knowledge and skills."
+},
+{
+  "intent": "faculty",
+  "patterns": [
+    "professor",
+    "faculty",
+    "teachers",
+    "college teachers",
+    "faculty details",
+    "teachers in college",
+    "staff",
+    "teaching staff"
+  ],
+  "response": "Our college has many professors who are highly knowledgeable in their respective subjects and very friendly in nature. Each branch has three or more teachers who specifically teach and support their department students. In addition, we have specialized teachers such as sports teachers, English teachers, yoga instructors, and many more to ensure overall development of students."
+} ,
+{
+  "intent": "college_timing",
+  "patterns": [
+    "college timing",
+    "college time",
+    "when does college start",
+    "college schedule",
+    "class timing",
+    "daily timing of college",
+    "college hours"
+  ],
+  "response": "The college follows a fixed daily schedule from 10:00 AM to 5:00 PM. There is a lunch break from 1:00 PM to 2:00 PM. Classes are conducted throughout the day with proper breaks, and the schedule may slightly vary depending on the department and semester."
+},
+{ 
+  "intent": "admission_documents", 
+  "patterns": [ 
+    "documents required for admission", 
+    "admission documents", 
+    "what documents needed", 
+    "documents list for college admission", 
+    "required certificates", "admission requirements"
+     ], 
+     "response": "Required documents for admission include 10th marksheet, admit card, Aadhaar card, and at least 10 passport-size photos. Students also need to submit caste certificate (if applicable), income certificate, domicile certificate, and migration certificate if required. It is recommended to carry 2–3 photocopies of each document."
+},
+]
