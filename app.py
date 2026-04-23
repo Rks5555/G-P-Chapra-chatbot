@@ -41,11 +41,15 @@ def chatbot(user_input):
                 best_match = item
 
     # ---------------- RESPONSE HANDLING ----------------
-    if best_match:
-        response_text = random.choice(best_match["response"])
-    else:
-        response_text = "Sorry, I couldn't understand your question."
+    if best_match and "response" in best_match:
+    response_data = best_match["response"]
 
+    if isinstance(response_data, list):
+        response_text = random.choice(response_data)
+    else:
+        response_text = response_data
+else:
+    response_text = "Sorry, I couldn't understand your question."
     # ---------------- DECISION SYSTEM ----------------
     if best_score >= 75:
         return response_text
