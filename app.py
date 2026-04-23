@@ -41,7 +41,7 @@ def chatbot(user_input):
                 best_match = item
 
     # ---------------- RESPONSE HANDLING ----------------
-    if best_match and "response" in best_match:
+if best_match and "response" in best_match:
     response_data = best_match["response"]
 
     if isinstance(response_data, list):
@@ -50,6 +50,7 @@ def chatbot(user_input):
         response_text = response_data
 else:
     response_text = "Sorry, I couldn't understand your question."
+
     # ---------------- DECISION SYSTEM ----------------
     if best_score >= 75:
         return response_text
