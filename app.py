@@ -19,7 +19,7 @@ def clean_text(text):
 # ---------------- FLASK APP ----------------
 app = Flask(__name__)
 
-# ---------------- CHATBOT FUNCTION (WITHOUT SPACY) ----------------
+# ---------------- CHATBOT FUNCTION (WITHOUT SPACY) -----------
 def chatbot(user_input):
     user_input = clean_text(user_input)
 
@@ -38,7 +38,7 @@ def chatbot(user_input):
                 best_score = score
                 best_match = item
 
-    # ---------------- RESPONSE HANDLING ----------------
+    # ---------------- SAFE RESPONSE HANDLING ----------------
     if best_match and "response" in best_match:
         response_data = best_match["response"]
 
@@ -47,7 +47,7 @@ def chatbot(user_input):
         else:
             response_text = response_data
     else:
-        response_text = "Sorry, I couldn't understand your question."
+        return "Sorry, I couldn't understand your question."
 
     # ---------------- DECISION SYSTEM ----------------
     if best_score >= 75:
@@ -61,21 +61,7 @@ def chatbot(user_input):
 
     else:
         return "Sorry, I couldn't understand your question. Try asking differently."
-
-
-
-    # ---------------- DECISION SYSTEM ----------------
-    if best_score >= 75:
-        return response_text
-
-    elif 60 <= best_score < 75:
-        return f"🙂 I think you are asking this:\n{response_text}"
-
-    elif 45 <= best_score < 60:
-        return f"🤔 Not fully sure, but maybe this helps:\n{response_text}"
-
-    else:
-        return "Sorry, I couldn't understand your question. Try asking differently."
+    
 
 # ---------------- ROUTES ----------------
 @app.route("/")
