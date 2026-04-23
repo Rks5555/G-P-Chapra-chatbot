@@ -26,7 +26,7 @@ def chatbot(user_input):
     best_match = None
     best_score = 0
 
-
+    
  for item in data:
      if not isinstance(item, dict):
         continue
