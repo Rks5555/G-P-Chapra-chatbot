@@ -851,5 +851,18 @@
     "required certificates", "admission requirements"
      ], 
      "response": "Required documents for admission include 10th marksheet, admit card, Aadhaar card, and at least 10 passport-size photos. Students also need to submit caste certificate (if applicable), income certificate, domicile certificate, and migration certificate if required. It is recommended to carry 2–3 photocopies of each document."
+},
+  {
+  "intent": "cctv_security",
+  "patterns": [
+    "camera",
+    "cctv",
+    "security",
+    "is there camera in college",
+    "college safety",
+    "camera in classroom",
+    "surveillance"
+  ],
+  "response": "Our college has CCTV cameras installed throughout the campus, including classrooms and important areas. This ensures proper safety, security, and discipline among students, and helps in maintaining a well-monitored environment."
 }
 ]
