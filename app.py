@@ -32,8 +32,6 @@ def chatbot(user_input):
 
         for pattern in item["patterns"]:
             pattern_clean = clean_text(pattern)
-
-            # ONLY FUZZY MATCHING (FAST + SAFE)
             score = fuzz.token_set_ratio(user_input, pattern_clean)
 
             if score > best_score:
@@ -41,15 +39,30 @@ def chatbot(user_input):
                 best_match = item
 
     # ---------------- RESPONSE HANDLING ----------------
-if best_match and "response" in best_match:
-    response_data = best_match["response"]
+    if best_match and "response" in best_match:
+        response_data = best_match["response"]
 
-    if isinstance(response_data, list):
-        response_text = random.choice(response_data)
+        if isinstance(response_data, list):
+            response_text = random.choice(response_data)
+        else:
+            response_text = response_data
     else:
-        response_text = response_data
-else:
-    response_text = "Sorry, I couldn't understand your question."
+        response_text = "Sorry, I couldn't understand your question."
+
+    # ---------------- DECISION SYSTEM ----------------
+    if best_score >= 75:
+        return response_text
+
+    elif 60 <= best_score < 75:
+        return f"🙂 I think you are asking this:\n{response_text}"
+
+    elif 45 <= best_score < 60:
+        return f"🤔 Not fully sure, but maybe this helps:\n{response_text}"
+
+    else:
+        return "Sorry, I couldn't understand your question. Try asking differently."
+
+
 
     # ---------------- DECISION SYSTEM ----------------
     if best_score >= 75:
