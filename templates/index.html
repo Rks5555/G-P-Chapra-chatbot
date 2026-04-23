@@ -1,67 +1,92 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>GP Chapra Chatbot</title>
+
     <style>
         body {
+            background: #eaeaea;
             font-family: Arial;
-            background: #f0f2f5;
         }
 
         .chat-container {
-            width: 400px;
-            margin: 50px auto;
+            width: 380px;
+            margin: auto;
+            margin-top: 30px;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
-            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            height: 600px;
         }
 
         h2 {
             text-align: center;
+            padding: 10px;
         }
 
         #chat-box {
-            height: 300px;
-            overflow-y: auto;
-            border: 1px solid #ccc;
+            flex: 1;
             padding: 10px;
-            margin-bottom: 10px;
+            overflow-y: auto;
         }
 
         .user {
-            text-align: right;
-            color: blue;
+            background: #a8d5ba;
+            padding: 10px;
+            border-radius: 15px;
             margin: 5px;
+            align-self: flex-end;
+            max-width: 70%;
         }
 
         .bot {
-            text-align: left;
-            color: green;
+            background: #eee;
+            padding: 10px;
+            border-radius: 15px;
             margin: 5px;
-        }
-
-        input {
-            width: 75%;
-            padding: 8px;
-        }
-
-        button {
-            padding: 8px 12px;
-            background: green;
-            color: white;
-            border: none;
-            cursor: pointer;
+            align-self: flex-start;
+            max-width: 70%;
         }
 
         .buttons {
-            margin-bottom: 10px;
+            display: flex;
+            overflow-x: auto;
+            padding: 5px;
+            gap: 5px;
         }
 
         .buttons button {
-            margin: 2px;
-            background: #007bff;
+            background: #5c5ce0;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 12px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .input-area {
+            display: flex;
+            padding: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .send-btn {
+            background: #5c5ce0;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            margin-left: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -69,34 +94,45 @@
 <body>
 
 <div class="chat-container">
+
     <h2>GP Chapra Chatbot</h2>
 
+    <div id="chat-box"></div>
+
+    <!-- 🔽 BUTTONS BOTTOM -->
     <div class="buttons">
         <button onclick="quickMsg('college info')">College Info</button>
         <button onclick="quickMsg('admission process')">Admission</button>
         <button onclick="quickMsg('fees structure')">Fees</button>
         <button onclick="quickMsg('campus location')">Location</button>
         <button onclick="quickMsg('exam pattern')">Exam</button>
+        <button onclick="quickMsg('hostel facility')">Hostel</button>
     </div>
 
-    <div id="chat-box"></div>
+    <!-- 🔽 INPUT AREA -->
+    <div class="input-area">
+        <input type="text" id="msg" placeholder="Type your question...">
+        <button class="send-btn" onclick="sendMsg()">➤</button>
+    </div>
 
-    <input type="text" id="msg" placeholder="Type your message...">
-    <button onclick="sendMsg()">Send</button>
 </div>
 
 <script>
 function appendMessage(sender, text) {
     let chatBox = document.getElementById("chat-box");
+
     let msgDiv = document.createElement("div");
     msgDiv.className = sender;
     msgDiv.innerText = text;
+
     chatBox.appendChild(msgDiv);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
 function sendMsg() {
     let message = document.getElementById("msg").value;
+
+    if (message.trim() === "") return;
 
     appendMessage("user", message);
 
