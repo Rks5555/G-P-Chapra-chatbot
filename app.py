@@ -29,19 +29,15 @@ def chatbot(user_input):
      if not isinstance(item, dict):
         continue
 
-    if "patterns" not in item or 
-"response" not in item:
+    if "patterns" not in item or "response" not in item:
         continue
 
     for pattern in item["patterns"]:
         if not isinstance(pattern, str):
             continue
 
-        pattern_clean = 
-clean_text(pattern)
-        score = 
-fuzz.token_set_ratio(user_input,
-pattern_clean)
+        pattern_clean = clean_text(pattern)
+        score = fuzz.token_set_ratio(user_input, pattern_clean)
 
         if score > best_score:
             best_score = score
