@@ -25,31 +25,38 @@ def chatbot(user_input):
 
     best_match = None
     best_score = 0
+ for item in data:
+     if not isinstance(item, dict):
+        continue
 
-    for item in data:
-        if "patterns" not in item:
+    if "patterns" not in item or "response" not in item:
+        continue
+
+    for pattern in item["patterns"]:
+        if not isinstance(pattern, str):
             continue
 
-        for pattern in item["patterns"]:
-            pattern_clean = clean_text(pattern)
-            score = fuzz.token_set_ratio(user_input, pattern_clean)
+        pattern_clean = clean_text(pattern)
+        score = fuzz.token_set_ratio(user_input, pattern_clean)
 
-            if score > best_score:
-                best_score = score
-                best_match = item
+        if score > best_score:
+            best_score = score
+            best_match = item
+    
+                
 
     # ---------------- SAFE RESPONSE HANDLING ----------------
-    if best_match and "response" in best_match:
-        response_data = best_match["response"]
+if best_match and "response" in best_match:
+    response_data = best_match["response"]
 
-        if isinstance(response_data, list):
-            response_text = random.choice(response_data)
-        else:
-            response_text = response_data
+    if isinstance(response_data, list):
+        response_text = random.choice(response_data)
+    elif isinstance(response_data, str):
+        response_text = response_data
     else:
-        return "Sorry, I couldn't understand your question."
-
-    # ---------------- DECISION SYSTEM ----------------
+        response_text = "Sorry, something went wrong."
+else:
+    response_text = "Sorry, I couldn't understand your question."
     if best_score >= 75:
         return response_text
 
@@ -64,22 +71,20 @@ def chatbot(user_input):
     
 
 # ---------------- ROUTES ----------------
-@app.route("/")
-def home():
-    return render_template("index.html")
-
 @app.route("/chat", methods=["POST"])
 def chat():
-    data_json = request.get_json()
-    user_input = data_json.get("message", "") if data_json else ""
+    try:
+        data_json = request.get_json()
 
-    if not user_input:
-        return jsonify({"reply": "Please type something"})
+        if not data_json or "message" not in data_json:
+            return jsonify({"reply": "Please type something"})
 
-    response = chatbot(user_input)
-    return jsonify({"reply": response})
+        user_input = data_json["message"]
 
-# ---------------- RUN APP ----------------
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))   # IMPORTANT
-    app.run(host="0.0.0.0", port=port, debug=False)
+        response = chatbot(user_input)
+
+        return jsonify({"reply": response})
+
+    except Exception as e:
+        print("ERROR:", e)
+        return jsonify({"reply": "Server error occurred"}), 500
