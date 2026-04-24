@@ -57,8 +57,7 @@ def chatbot(user_input):
         return response_text
     elif 60 <= best_score < 75:
         return f"🙂 I think you are asking this:\n{response_text}"
-    elif 45 <= best_score < 60:
-        return f"🤔 Not fully sure, but maybe this helps:\n{response_text}"
+    
     else:
         return "Sorry, I couldn't understand your question."
 
