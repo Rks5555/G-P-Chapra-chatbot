@@ -3,73 +3,84 @@
 <head>
     <title>GP Chapra Chatbot</title>
 
+    <!-- MOBILE RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
-            background: #eaeaea;
+            margin: 0;
             font-family: Arial;
+            background: #e5ddd5;
         }
 
+        /* FULL SCREEN CONTAINER */
         .chat-container {
-            width: 380px;
-            margin: auto;
-            margin-top: 30px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            width: 100%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            height: 600px;
         }
 
-        h2 {
+        /* HEADER */
+        .header {
+            background: #075e54;
+            color: white;
+            padding: 15px;
             text-align: center;
-            padding: 10px;
+            font-weight: bold;
         }
 
+        /* CHAT AREA */
         #chat-box {
             flex: 1;
             padding: 10px;
             overflow-y: auto;
         }
 
+        /* USER MESSAGE */
         .user {
-            background: #a8d5ba;
+            background: #dcf8c6;
             padding: 10px;
-            border-radius: 15px;
+            border-radius: 10px;
             margin: 5px;
+            max-width: 75%;
             align-self: flex-end;
-            max-width: 70%;
         }
 
+        /* BOT MESSAGE */
         .bot {
-            background: #eee;
+            background: white;
             padding: 10px;
-            border-radius: 15px;
+            border-radius: 10px;
             margin: 5px;
+            max-width: 75%;
             align-self: flex-start;
-            max-width: 70%;
         }
 
+        /* BUTTONS */
         .buttons {
             display: flex;
             overflow-x: auto;
             padding: 5px;
-            gap: 5px;
+            background: #f0f0f0;
         }
 
         .buttons button {
-            background: #5c5ce0;
-            color: white;
+            margin-right: 5px;
             border: none;
             border-radius: 20px;
-            padding: 8px 12px;
+            padding: 6px 12px;
+            background: #128c7e;
+            color: white;
             cursor: pointer;
             white-space: nowrap;
         }
 
+        /* INPUT AREA */
         .input-area {
             display: flex;
-            padding: 10px;
+            padding: 8px;
+            background: white;
         }
 
         input {
@@ -80,13 +91,12 @@
         }
 
         .send-btn {
-            background: #5c5ce0;
-            color: white;
+            margin-left: 5px;
             border: none;
             border-radius: 50%;
+            background: #128c7e;
+            color: white;
             width: 40px;
-            margin-left: 5px;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -95,11 +105,11 @@
 
 <div class="chat-container">
 
-    <h2>GP Chapra Chatbot</h2>
+    <div class="header">GP Chapra Chatbot</div>
 
     <div id="chat-box"></div>
 
-    <!-- 🔽 BUTTONS BOTTOM -->
+    <!-- BUTTONS -->
     <div class="buttons">
         <button onclick="quickMsg('college info')">College Info</button>
         <button onclick="quickMsg('admission process')">Admission</button>
@@ -109,9 +119,9 @@
         <button onclick="quickMsg('hostel facility')">Hostel</button>
     </div>
 
-    <!-- 🔽 INPUT AREA -->
+    <!-- INPUT -->
     <div class="input-area">
-        <input type="text" id="msg" placeholder="Type your question...">
+        <input type="text" id="msg" placeholder="Type your message...">
         <button class="send-btn" onclick="sendMsg()">➤</button>
     </div>
 
