@@ -82,7 +82,9 @@
       "mess food",
       "food menu",
       "hostel food",
-      "what food is provided"
+      "what food is provided",
+      "food",
+      "mess"
     ],
     "response": "The hostel mess provides simple vegetarian and non-vegetarian meals including breakfast, lunch, and dinner with a fixed monthly menu."
   },
